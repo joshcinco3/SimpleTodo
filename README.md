@@ -28,11 +28,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I encountered one fatal issue while implementing the item removal feature. The item removal feature had us declare an ItemsAdapter instance at the top of the program, rather than in the middle as it was previously. So, upon removing an item the app would crash because of the attempted redeclaration of the ItemsAdapter. This was fixed after removing the redeclaration, and instead just updating the itemsAdapter.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [Joshua Cinco]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
